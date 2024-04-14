@@ -7,60 +7,65 @@
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{hyperref}
+
+\renewcommand{\normalsize}{\small} 
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{江涛}
+\name{丁鼎 Eric Ding}
 
 % {E-mail}{mobilephone}{homepage}
 % be careful of _ in emaill address
-\contactInfo{(+86) 132-6029-9910}{hijiangtao@gmail.com}{Web前端研发工程师}{GitHub @hijiangtao}
+\contactInfo{(+86) 13601629872}{ericding@umich.edu}{\href{https://ericdinging.github.io/mywebsite/}{https://ericdinging.github.io/mywebsite/}}{}
 % {E-mail}{mobilephone}
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
  
-\section{个人总结}
-本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
+% \section{个人总结}
+% 本人在校成绩优秀、乐观向上，工作负责、自我驱动力强、热爱尝试新事物，认同开放、连接、共享的Web在未来的不可替代性。在校期间长期从事可视分析(Web的2D/3D时空可视化)相关研究，对Web技术发展趋势及前端工程化解决方案有浓厚兴趣。\textbf{现任职于阿里巴巴集团。}
 
 % \section{\faGraduationCap\ 教育背景}
 \section{教育背景}
-\datedsubsection{\textbf{中国科学院大学},计算机应用技术,\textit{在读硕士研究生}}{2015.9 - 2018.6}
-\ \textbf{排名11/133(前10\%)},中国科学院大学学业奖学金(2次),IEEE Student member,预计2018年6月毕业
-\datedsubsection{\textbf{北京理工大学},软件工程,\textit{工学学士}}{2011.9 - 2015.6}
-\ \textbf{排名2/62(前5\%)},国家励志奖学金,人民奖学金(7次),科技竞赛奖(2次),北京市普通高等学校优秀毕业生,北京理工大学优秀毕业生,软件学院金牌毕业生,优秀团员/优秀学生(5次)
-\datedsubsection{\textbf{荷兰 莱顿大学},计算机科学与技术,\textit{国家留学基金委公派交换生}}{2015.3 - 2015.5}
-\ 2014年中国政府奖学金(\textit{http://www.csc.edu.cn/}),DID-ACTE项目交换生(\textit{http://did-acte.org/})
+\datedsubsection{\textbf{康奈尔大学},计算机科学,\textit{博士研究生}}{2024.9 - 2029.6}
+\ 导师: Rachee Singh， 研究方向: 机器学习系统与网络， 康奈尔大学研究生奖学金 (前20\%)
+\datedsubsection{\textbf{密西根大学},计算机科学,\textit{工学学士}}{2022.8 - 2024.5}
+\ \textbf{GPA. 3.96}, 导师: Mosharaf Chowdhury, James B. Angell Scholar, Dean's List
+\datedsubsection{\textbf{上海交通大学},电子信息与计算机工程,\textit{工学学士}}{2020.9 - 2024.8}
+\ \textbf{GPA. 3.76 (前10\%)}, 唐君远奖学金提名
 
 % \section{\faCogs\ IT 技能}
 \section{技术能力}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-  \item \textbf{编程语言}: JavaScript (ECMAScript, Node.js), HTML/CSS, Python, Go, SQL, C, Shell
-  \item \textbf{操作系统,数据库与工程构建}: Linux/macOS/MySQL/MongoDB/Git/webpack/Progressive Web App
-  \item \textbf{关键词}: React/Vue.js/D3.js(SVG)/three.js(canvas, WebGL)/chrome extension/Express
+  \item \textbf{编程语言}: C++, Python, C, SystemVerilog, RISC-V, Matlab, React/JS, Bash, SQL, R
+  \item \textbf{框架与协议}: PyTorch, CUDA, Tensorflow, TCP/IP, HTTP, gRPC, Hadoop
+  \item \textbf{操作系统,数据库与工程构建}: Linux, macOS, Docker, Kubernetes, Redis, MySQL, Git, Cloudflare, AWS
+  \item \textbf{工程模拟}: Verdi, Catia, Matlab, Mathematica, LabVIEW, Pspice, Proteus, Vivado  
 \end{itemize}
 
 % \end{itemize}
 
-\section{实习经历}
-\datedsubsection{\textbf{阿里巴巴集团 | Alibaba}, 前端开发工程师}{2017.6-2017.9}
+\section{科研经历}
+\datedsubsection{\textbf{\href{https://symbioticlab.org/}{SymbioticLab}, 密西根大学}, 机器学习系统研究助理，导师：Mosharaf Chowdhury}{2023.5 - 2024.5}
 \begin{itemize}
-%   \item 飞猪北京前端团队全面负责各交通线的票务(机票/火车票/汽车票) web 应用与事业群基础架构研发
-  \item 独立负责车站地图开发(React),通过HTML5 本地存储及JSBridge实现在阿里全系应用中发布上线
-  \item 独立负责BU SPM chrome插件开发,支付成功/订单详情等页面的开发与交叉营销的接入工作
+  \item 开发基于微服务架构的联邦学习（FL）资源管理系统\emph{Propius}。
+  \item 在GPU集群中设计和部署分布式FL评估框架，支持多任务并行训练。
+  \item 在\emph{Propius}部署高性能调度算法\emph{Venn}，将平均FL任务完成时间提高1.88倍，相较于随机分配策略。
+  \item 参与开源项目\emph{FedScale}，完善FL优化器（FedYoGi, FedProx, FedAvg）部署。
 \end{itemize}
 
-\datedsubsection{\textbf{北京腾云天下科技有限公司 | TalkingData},数据挖掘与可视化工程师}{2015.11-2017.5}
+\datedsubsection{\textbf{\href{https://fanlab.bme.umich.edu/}{The Fan Lab}, 密西根大学}, 嵌入式系统研究助理, 导师: Xudong Fan}{2023.5-2023.9}
 \begin{itemize}
-  \item \textbf{利用海量用户定位数据，对城市空间及人群移动特征进行研究。}第一个课题是基于香农熵和人群出行模式，构建城市网格与用户矩阵分析城市多样性/流动性分布；可视分析平台前端与可视化基于D3/Vue/Express开发，数据分析与存储采用Python/MySQL/MongoDB技术，为了均衡大数据情况下的页面可视化渲染消耗用canvas替代svg。第二个课题是对海量商场定位数据做人群分类与可视化查询，依据该系统撰写的论文被CIKM 2016(DAVA Workshop)录用，并收录于中科院软件所年会成果集
-  \item 负责数据科学部HQ LAB的可视化原型开发，主导 TalkingMind 平台系统设计与前端开发
+  \item 开发\emph{WASP}无线可穿戴设备，能够通过监测分析汗液蒸发来实现早期疾病诊断。
+  \item 设计了基于I2C和Bluetooth Low Energy协议的高可靠性通信协议。构造局部网络，实现两个设备内微控制器与一个终端微控制器之间的高保真数据通信。
 \end{itemize}
 
-\datedsubsection{\textbf{北京格灵深瞳信息技术有限公司 | DeepGlint},Web开发工程师}{2015.7-2015.9}
+\datedsubsection{\textbf{\href{https://jhc.sjtu.edu.cn/}{约翰·霍普克罗夫特计算机科学中心}}, 机器学习理论研究助理, 导师: Shuai Li}{2021.9-2022.3}
 \begin{itemize}
-  \item \textbf{独立负责MUSE部门的可视化组件研发。}与平台研发、设计协作完成 DeepGlint Developer 平台可视化图表组件的集成开发，符合完全定制化渲染、响应式布局与实时更新等特点
-  \item 利用 D3+Vue+WebGL(Three.js) 尝试实现三维空间的人群移动可视化
+  \item 研究、理论分析并部署非对比自监督学习（SSL）算法。
+  \item 比较分析非对比SSL和传统监督学习的性能，验证了长尾分布的不平衡数据集上SSL方法的稳定性。
 \end{itemize}
 
 % \begin{onehalfspacing}
@@ -77,19 +82,21 @@
 % \end{itemize}
 % \end{onehalfspacing}
 
-\section{竞赛获奖/项目作品}
+\section{项目经历}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-%   \item LeetCodeOJ Solutions, \textit{https://github.com/hijiangtao/LeetCodeOJ}
-  \item 第三届中国软件杯大学生软件设计大赛\textbf{全国一等奖}( \textit{http://www.cnsoftbei.com/} ),2014 年8月
-  \item 中国机器人大赛创意设计大赛\textbf{全国特等奖}( \textit{http://www.rcccaa.org/} ),2013年8月
-%   \item 中国机器人大赛暨Robocup公开赛(武术擂台赛)全国一等奖,2013年10月
-  \item 第11届北京理工大学“世纪杯”竞赛学生课外科技作品竞赛\textbf{特等奖},2013年8月
-  \item VIS Components for security system, \textit{https://hijiangtao.github.io/ss-vis-component/}
-  \item 个人博客：\textit{https://hijiangtao.github.io/}，更多作品见 \textit{https://github.com/hijiangtao}
-%   \item 电视节目"爸爸去哪儿"可视化分析展示, \textit{https://hijiangtao.github.io/variety-show-hot-spot-vis/}
+  \item 用SystemVerilog编写完整的\textbf{可综合乱序RICS-V处理器}，功能包括：R10k寄存器重命名算法，N路超标量，加载/存储队列，锦标赛分支预测器和非阻塞缓存。
+  \item 编写\textbf{前向卷积层计算CUDA核函数}，采用了内存协同、共享内存乘法和循环展开等高性能并行技术。
+  \item 用Python/React-JS编写\textbf{全栈分布式搜索引擎}。构造兼容Hadoop Streaming的MapReduce Pipeline，计算Wikipedia网页的分段倒排索引。
+        编写了一个分布式后端索引服务，能够通过PageRank和TF-IDF生成定制搜索结果，并编写了可扩展的前端搜索服务器。该项目在AWS上部署。
+  \item 用C++编写\textbf{简化操作系统内核}，开发了CPU调度器和线程库，支持线程分配、中断和同步API，如互斥锁和条件变量。开发了一个内存页面调度器，管理进程的虚拟地址空间和磁盘文件缓存。用UNIX文件系统层次结构构建了一个多线程网络文件服务器。
 \end{itemize}
 
+\section{发表文章}
+\begin{itemize}[parsep=0.2ex]
+  \item Jiachen Liu, Fan Lai, \textbf{Ding Ding}, Yiwen Zhang, Mosharaf Chowdhury, \href{https://arxiv.org/abs/2312.08298}{Venn: Resource Management Across Federated Learning Jobs}, arXiv (arXiv:2312.08298)
+  \item Anjali Devi Sivakumar, Ruchi Sharma, Chandrakalavathi Thota, \textbf{Ding Ding}, Xudong Fan, \href{https://pubs.acs.org/doi/10.1021/acssensors.3c01936}{WASP: Wearable Analytical Skin Probe for Dynamic Monitoring of Transepidermal Water Loss}, ACS Sensors 2023.
+\end{itemize}
 % \section{\faHeartO\ 项目/作品摘要}
 % \section{项目/作品摘要}
 % \datedline{\textit{An Integrated Version of Security Monitor Vis System}, https://hijiangtao.github.io/ss-vis-component/ }{}
@@ -100,13 +107,12 @@
 
 
 % \section{\faInfo\ 社会实践/其他}
-\section{社区参与/实践其他}
+\section{实践及其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-  \item 乐于参与开源社区讨论,\textbf{参与翻译 Vue.js, webpack, WebAssembly, Babel 文档，印记中文成员}
-  \item 中国科学院大学2016秋季学期可视化与可视分析课程助教，\textit{http://vis.ios.ac.cn/infovis-ucas/}
-  \item 未来论坛学生会成员、北理社联新闻信息中心主任、北理工软件学院学生会宣传部副部长(2012-2016)
-  \item 2013-2015 北京市共青团“温暖衣冬”志愿者,第九届园博会志愿者,2014 FLL机器人世锦赛志愿者
+  \item Computer Science Peer Tutor，密西根大学Renew CS Tutoring Program， 2024.2 - 2024.5
+  \item 电气工程师，上海交通大学赛车队，2021.3 - 2022.8
+  \item 班长，上海交通大学密西根学院，2020.9 - 2022.8
 \end{itemize}
 
 %% Reference
